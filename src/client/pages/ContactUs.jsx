@@ -21,7 +21,7 @@ const handleChange = (e) => {
 const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    await axios.post("http://localhost:5000/contact", formData);
+    await axios.post(`${import.meta.env.VITE_API_BASE_URL}/contact`, formData);
     setFormData({ name: "", contact: "", email: "", message: "" });
     alert("Our team will contact you soon. Wishing you a wonderful day! 🌼");
   } catch (error) {

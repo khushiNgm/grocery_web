@@ -238,11 +238,12 @@ const scrollPulse = (scrollOffset) => {
         «
   </button>
   <button 
-    onClick={() => scrollPulse(300)} 
-    className="absolute flex items-center justify-center text-white right-0 top-1/2 transform -translate-y-1/2 bg-green-600 hover:bg-green-500 p-2 rounded-full shadow-md z-10 bg-green-600 p-4 w-20px h-10"
-  >
-    »
-  </button>
+  onClick={() => scrollPulse(300)} 
+  className="absolute flex items-center justify-center text-white right-0 top-1/2 transform -translate-y-1/2 bg-green-600 hover:bg-green-500 p-4 rounded-full shadow-md z-10 h-10 w-5"
+>
+  »
+</button>
+
 
   {/* Scrollable Pulses Row */}
   <div 
